@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		821B115F1EAE2E2000968C98 /* libfuzzer_support.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11461EAE2E2000968C98 /* libfuzzer_support.a */; };
+		821B11601EAE2E2000968C98 /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11471EAE2E2000968C98 /* libgmock.a */; };
+		821B11611EAE2E2000968C98 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11481EAE2E2000968C98 /* libgtest.a */; };
+		821B11621EAE2E2000968C98 /* libicui18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11491EAE2E2000968C98 /* libicui18n.a */; };
+		821B11631EAE2E2000968C98 /* libicuuc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B114A1EAE2E2000968C98 /* libicuuc.a */; };
+		821B11641EAE2E2000968C98 /* libjson_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B114B1EAE2E2000968C98 /* libjson_fuzzer_lib.a */; };
+		821B11651EAE2E2000968C98 /* libparser_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B114C1EAE2E2000968C98 /* libparser_fuzzer_lib.a */; };
+		821B11661EAE2E2000968C98 /* libregexp_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B114D1EAE2E2000968C98 /* libregexp_fuzzer_lib.a */; };
+		821B11671EAE2E2000968C98 /* libv8_base.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B114E1EAE2E2000968C98 /* libv8_base.a */; };
+		821B11681EAE2E2000968C98 /* libv8_external_snapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B114F1EAE2E2000968C98 /* libv8_external_snapshot.a */; };
+		821B11691EAE2E2000968C98 /* libv8_libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11501EAE2E2000968C98 /* libv8_libbase.a */; };
+		821B116A1EAE2E2000968C98 /* libv8_libplatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11511EAE2E2000968C98 /* libv8_libplatform.a */; };
+		821B116B1EAE2E2000968C98 /* libv8_libsampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11521EAE2E2000968C98 /* libv8_libsampler.a */; };
+		821B116C1EAE2E2000968C98 /* libv8_nosnapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11531EAE2E2000968C98 /* libv8_nosnapshot.a */; };
+		821B116D1EAE2E2000968C98 /* libwasm_asmjs_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11541EAE2E2000968C98 /* libwasm_asmjs_fuzzer_lib.a */; };
+		821B116E1EAE2E2000968C98 /* libwasm_call_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11551EAE2E2000968C98 /* libwasm_call_fuzzer_lib.a */; };
+		821B116F1EAE2E2000968C98 /* libwasm_code_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11561EAE2E2000968C98 /* libwasm_code_fuzzer_lib.a */; };
+		821B11701EAE2E2000968C98 /* libwasm_data_section_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11571EAE2E2000968C98 /* libwasm_data_section_fuzzer_lib.a */; };
+		821B11711EAE2E2000968C98 /* libwasm_function_sigs_section_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11581EAE2E2000968C98 /* libwasm_function_sigs_section_fuzzer_lib.a */; };
+		821B11721EAE2E2000968C98 /* libwasm_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B11591EAE2E2000968C98 /* libwasm_fuzzer_lib.a */; };
+		821B11731EAE2E2000968C98 /* libwasm_globals_section_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B115A1EAE2E2000968C98 /* libwasm_globals_section_fuzzer_lib.a */; };
+		821B11741EAE2E2000968C98 /* libwasm_imports_section_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B115B1EAE2E2000968C98 /* libwasm_imports_section_fuzzer_lib.a */; };
+		821B11751EAE2E2000968C98 /* libwasm_memory_section_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B115C1EAE2E2000968C98 /* libwasm_memory_section_fuzzer_lib.a */; };
+		821B11761EAE2E2000968C98 /* libwasm_names_section_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B115D1EAE2E2000968C98 /* libwasm_names_section_fuzzer_lib.a */; };
+		821B11771EAE2E2000968C98 /* libwasm_types_section_fuzzer_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821B115E1EAE2E2000968C98 /* libwasm_types_section_fuzzer_lib.a */; };
+		821B117A1EAE2E3300968C98 /* natives_blob.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 821B11781EAE2E3300968C98 /* natives_blob.bin */; };
+		821B117B1EAE2E3300968C98 /* snapshot_blob.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 821B11791EAE2E3300968C98 /* snapshot_blob.bin */; };
+		829B79771EAE133F00F36957 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 829B79761EAE133F00F36957 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		829B79711EAE133F00F36957 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				821B117A1EAE2E3300968C98 /* natives_blob.bin in CopyFiles */,
+				821B117B1EAE2E3300968C98 /* snapshot_blob.bin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		821B11461EAE2E2000968C98 /* libfuzzer_support.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfuzzer_support.a; path = v8_5.6.326.50/v8/out/x64.debug/libfuzzer_support.a; sourceTree = "<group>"; };
+		821B11471EAE2E2000968C98 /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = v8_5.6.326.50/v8/out/x64.debug/libgmock.a; sourceTree = "<group>"; };
+		821B11481EAE2E2000968C98 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = v8_5.6.326.50/v8/out/x64.debug/libgtest.a; sourceTree = "<group>"; };
+		821B11491EAE2E2000968C98 /* libicui18n.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicui18n.a; path = v8_5.6.326.50/v8/out/x64.debug/libicui18n.a; sourceTree = "<group>"; };
+		821B114A1EAE2E2000968C98 /* libicuuc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicuuc.a; path = v8_5.6.326.50/v8/out/x64.debug/libicuuc.a; sourceTree = "<group>"; };
+		821B114B1EAE2E2000968C98 /* libjson_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjson_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libjson_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B114C1EAE2E2000968C98 /* libparser_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libparser_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libparser_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B114D1EAE2E2000968C98 /* libregexp_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libregexp_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libregexp_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B114E1EAE2E2000968C98 /* libv8_base.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_base.a; path = v8_5.6.326.50/v8/out/x64.debug/libv8_base.a; sourceTree = "<group>"; };
+		821B114F1EAE2E2000968C98 /* libv8_external_snapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_external_snapshot.a; path = v8_5.6.326.50/v8/out/x64.debug/libv8_external_snapshot.a; sourceTree = "<group>"; };
+		821B11501EAE2E2000968C98 /* libv8_libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libbase.a; path = v8_5.6.326.50/v8/out/x64.debug/libv8_libbase.a; sourceTree = "<group>"; };
+		821B11511EAE2E2000968C98 /* libv8_libplatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libplatform.a; path = v8_5.6.326.50/v8/out/x64.debug/libv8_libplatform.a; sourceTree = "<group>"; };
+		821B11521EAE2E2000968C98 /* libv8_libsampler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libsampler.a; path = v8_5.6.326.50/v8/out/x64.debug/libv8_libsampler.a; sourceTree = "<group>"; };
+		821B11531EAE2E2000968C98 /* libv8_nosnapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_nosnapshot.a; path = v8_5.6.326.50/v8/out/x64.debug/libv8_nosnapshot.a; sourceTree = "<group>"; };
+		821B11541EAE2E2000968C98 /* libwasm_asmjs_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_asmjs_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_asmjs_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B11551EAE2E2000968C98 /* libwasm_call_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_call_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_call_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B11561EAE2E2000968C98 /* libwasm_code_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_code_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_code_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B11571EAE2E2000968C98 /* libwasm_data_section_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_data_section_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_data_section_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B11581EAE2E2000968C98 /* libwasm_function_sigs_section_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_function_sigs_section_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_function_sigs_section_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B11591EAE2E2000968C98 /* libwasm_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B115A1EAE2E2000968C98 /* libwasm_globals_section_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_globals_section_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_globals_section_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B115B1EAE2E2000968C98 /* libwasm_imports_section_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_imports_section_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_imports_section_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B115C1EAE2E2000968C98 /* libwasm_memory_section_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_memory_section_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_memory_section_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B115D1EAE2E2000968C98 /* libwasm_names_section_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_names_section_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_names_section_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B115E1EAE2E2000968C98 /* libwasm_types_section_fuzzer_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwasm_types_section_fuzzer_lib.a; path = v8_5.6.326.50/v8/out/x64.debug/libwasm_types_section_fuzzer_lib.a; sourceTree = "<group>"; };
+		821B11781EAE2E3300968C98 /* natives_blob.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = natives_blob.bin; path = v8_5.6.326.50/v8/out/x64.debug/natives_blob.bin; sourceTree = "<group>"; };
+		821B11791EAE2E3300968C98 /* snapshot_blob.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = snapshot_blob.bin; path = v8_5.6.326.50/v8/out/x64.debug/snapshot_blob.bin; sourceTree = "<group>"; };
+		829B79731EAE133F00F36957 /* v8-debugger */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "v8-debugger"; sourceTree = BUILT_PRODUCTS_DIR; };
+		829B79761EAE133F00F36957 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		829B79701EAE133F00F36957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821B115F1EAE2E2000968C98 /* libfuzzer_support.a in Frameworks */,
+				821B11601EAE2E2000968C98 /* libgmock.a in Frameworks */,
+				821B11611EAE2E2000968C98 /* libgtest.a in Frameworks */,
+				821B11621EAE2E2000968C98 /* libicui18n.a in Frameworks */,
+				821B11631EAE2E2000968C98 /* libicuuc.a in Frameworks */,
+				821B11641EAE2E2000968C98 /* libjson_fuzzer_lib.a in Frameworks */,
+				821B11651EAE2E2000968C98 /* libparser_fuzzer_lib.a in Frameworks */,
+				821B11661EAE2E2000968C98 /* libregexp_fuzzer_lib.a in Frameworks */,
+				821B11671EAE2E2000968C98 /* libv8_base.a in Frameworks */,
+				821B11681EAE2E2000968C98 /* libv8_external_snapshot.a in Frameworks */,
+				821B11691EAE2E2000968C98 /* libv8_libbase.a in Frameworks */,
+				821B116A1EAE2E2000968C98 /* libv8_libplatform.a in Frameworks */,
+				821B116B1EAE2E2000968C98 /* libv8_libsampler.a in Frameworks */,
+				821B116C1EAE2E2000968C98 /* libv8_nosnapshot.a in Frameworks */,
+				821B116D1EAE2E2000968C98 /* libwasm_asmjs_fuzzer_lib.a in Frameworks */,
+				821B116E1EAE2E2000968C98 /* libwasm_call_fuzzer_lib.a in Frameworks */,
+				821B116F1EAE2E2000968C98 /* libwasm_code_fuzzer_lib.a in Frameworks */,
+				821B11701EAE2E2000968C98 /* libwasm_data_section_fuzzer_lib.a in Frameworks */,
+				821B11711EAE2E2000968C98 /* libwasm_function_sigs_section_fuzzer_lib.a in Frameworks */,
+				821B11721EAE2E2000968C98 /* libwasm_fuzzer_lib.a in Frameworks */,
+				821B11731EAE2E2000968C98 /* libwasm_globals_section_fuzzer_lib.a in Frameworks */,
+				821B11741EAE2E2000968C98 /* libwasm_imports_section_fuzzer_lib.a in Frameworks */,
+				821B11751EAE2E2000968C98 /* libwasm_memory_section_fuzzer_lib.a in Frameworks */,
+				821B11761EAE2E2000968C98 /* libwasm_names_section_fuzzer_lib.a in Frameworks */,
+				821B11771EAE2E2000968C98 /* libwasm_types_section_fuzzer_lib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		821B117C1EAE2E4800968C98 /* v8 */ = {
+			isa = PBXGroup;
+			children = (
+				821B11781EAE2E3300968C98 /* natives_blob.bin */,
+				821B11791EAE2E3300968C98 /* snapshot_blob.bin */,
+				821B11461EAE2E2000968C98 /* libfuzzer_support.a */,
+				821B11471EAE2E2000968C98 /* libgmock.a */,
+				821B11481EAE2E2000968C98 /* libgtest.a */,
+				821B11491EAE2E2000968C98 /* libicui18n.a */,
+				821B114A1EAE2E2000968C98 /* libicuuc.a */,
+				821B114B1EAE2E2000968C98 /* libjson_fuzzer_lib.a */,
+				821B114C1EAE2E2000968C98 /* libparser_fuzzer_lib.a */,
+				821B114D1EAE2E2000968C98 /* libregexp_fuzzer_lib.a */,
+				821B114E1EAE2E2000968C98 /* libv8_base.a */,
+				821B114F1EAE2E2000968C98 /* libv8_external_snapshot.a */,
+				821B11501EAE2E2000968C98 /* libv8_libbase.a */,
+				821B11511EAE2E2000968C98 /* libv8_libplatform.a */,
+				821B11521EAE2E2000968C98 /* libv8_libsampler.a */,
+				821B11531EAE2E2000968C98 /* libv8_nosnapshot.a */,
+				821B11541EAE2E2000968C98 /* libwasm_asmjs_fuzzer_lib.a */,
+				821B11551EAE2E2000968C98 /* libwasm_call_fuzzer_lib.a */,
+				821B11561EAE2E2000968C98 /* libwasm_code_fuzzer_lib.a */,
+				821B11571EAE2E2000968C98 /* libwasm_data_section_fuzzer_lib.a */,
+				821B11581EAE2E2000968C98 /* libwasm_function_sigs_section_fuzzer_lib.a */,
+				821B11591EAE2E2000968C98 /* libwasm_fuzzer_lib.a */,
+				821B115A1EAE2E2000968C98 /* libwasm_globals_section_fuzzer_lib.a */,
+				821B115B1EAE2E2000968C98 /* libwasm_imports_section_fuzzer_lib.a */,
+				821B115C1EAE2E2000968C98 /* libwasm_memory_section_fuzzer_lib.a */,
+				821B115D1EAE2E2000968C98 /* libwasm_names_section_fuzzer_lib.a */,
+				821B115E1EAE2E2000968C98 /* libwasm_types_section_fuzzer_lib.a */,
+			);
+			name = v8;
+			sourceTree = "<group>";
+		};
+		829B796A1EAE133F00F36957 = {
+			isa = PBXGroup;
+			children = (
+				829B79751EAE133F00F36957 /* v8-debugger */,
+				821B117C1EAE2E4800968C98 /* v8 */,
+				829B79741EAE133F00F36957 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		829B79741EAE133F00F36957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				829B79731EAE133F00F36957 /* v8-debugger */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		829B79751EAE133F00F36957 /* v8-debugger */ = {
+			isa = PBXGroup;
+			children = (
+				829B79761EAE133F00F36957 /* main.cpp */,
+			);
+			path = "v8-debugger";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		829B79721EAE133F00F36957 /* v8-debugger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 829B797A1EAE133F00F36957 /* Build configuration list for PBXNativeTarget "v8-debugger" */;
+			buildPhases = (
+				829B796F1EAE133F00F36957 /* Sources */,
+				829B79701EAE133F00F36957 /* Frameworks */,
+				829B79711EAE133F00F36957 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "v8-debugger";
+			productName = "v8-debugger";
+			productReference = 829B79731EAE133F00F36957 /* v8-debugger */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		829B796B1EAE133F00F36957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					829B79721EAE133F00F36957 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 829B796E1EAE133F00F36957 /* Build configuration list for PBXProject "v8-debugger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 829B796A1EAE133F00F36957;
+			productRefGroup = 829B79741EAE133F00F36957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				829B79721EAE133F00F36957 /* v8-debugger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		829B796F1EAE133F00F36957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829B79771EAE133F00F36957 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		829B79781EAE133F00F36957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		829B79791EAE133F00F36957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		829B797B1EAE133F00F36957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/v8/include/**",
+					"$(SRCROOT)/v8/src",
+					"$(SRCROOT)/v8",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/v8_5.6.326.50/v8/out/x64.debug",
+				);
+				OTHER_CFLAGS = "-fno-rtti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		829B797C1EAE133F00F36957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/v8/include/**",
+					"$(SRCROOT)/v8/src",
+					"$(SRCROOT)/v8",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/v8_5.6.326.50/v8/out/x64.debug",
+				);
+				OTHER_CFLAGS = "-fno-rtti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		829B796E1EAE133F00F36957 /* Build configuration list for PBXProject "v8-debugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829B79781EAE133F00F36957 /* Debug */,
+				829B79791EAE133F00F36957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		829B797A1EAE133F00F36957 /* Build configuration list for PBXNativeTarget "v8-debugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829B797B1EAE133F00F36957 /* Debug */,
+				829B797C1EAE133F00F36957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 829B796B1EAE133F00F36957 /* Project object */;
+}

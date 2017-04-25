@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0B899166DE30B4EA36CA4AF0126C8282335752BE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0B899166DE30B4EA36CA4AF0126C8282335752BE" : 0,
+    "D9F2F88568060AB21532234138859F781C8C2636" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "29EC1C97-5067-4934-A750-944FD061F9C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0B899166DE30B4EA36CA4AF0126C8282335752BE" : "v8-compiler\/",
+    "D9F2F88568060AB21532234138859F781C8C2636" : "v8-compiler\/v8-debugger\/v8_5.6.326.50\/v8\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "v8-debugger",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "v8-debugger\/v8-debugger.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JoseExposito\/v8-compiler.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B899166DE30B4EA36CA4AF0126C8282335752BE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/chromium.googlesource.com\/v8\/v8.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D9F2F88568060AB21532234138859F781C8C2636"
+    }
+  ]
+}

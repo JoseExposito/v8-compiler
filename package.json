@@ -1,0 +1,43 @@
+{
+  "name": "v8-compiler",
+  "version": "0.1.0",
+  "description": "Compile your Node.js project and distribute it without source code",
+  "main": "v8-compiler.js",
+  "author": "José Expósito",
+  "license": "LGPL-3.0",
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoseExposito/v8-compiler.git"
+  },
+  "config": {
+    "target": "v7.8.0",
+    "arch": "x64"
+  },
+  "scripts": {
+    "clean": "node-gyp clean && rimraf ./node_source",
+    "download-node-source": "echo Downloading Node.js $npm_package_config_target source code && download --extract --strip 1 --out node_source https://nodejs.org/dist/$npm_package_config_target/node-$npm_package_config_target.tar.gz",
+    "configure": "echo Configuring v8-compiler for Node.js $npm_package_config_target && node-gyp --target=$npm_package_config_target --arch=$npm_package_config_arch configure",
+    "build": "echo Building v8-compiler for Node.js $npm_package_config_target && node-gyp --tarball=./node_source --target=$npm_package_config_target --arch=$npm_package_config_arch build",
+    "electron:configure": "echo NOT SUPPORTED YET && HOME=~/.electron-gyp node-gyp --target=$npm_package_config_target --arch=$npm_package_config_arch --dist-url=https://atom.io/download/electron configure",
+    "electron:build": "echo NOT SUPPORTED YET && HOME=~/.electron-gyp node-gyp --target=$npm_package_config_target --arch=$npm_package_config_arch --dist-url=https://atom.io/download/electron build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "nan": "^2.6.1"
+  },
+  "devDependencies": {
+    "download-cli": "^1.0.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "rimraf": "^2.6.1"
+  },
+  "keywords": [
+    "compiler",
+    "code",
+    "protection",
+    "nexe",
+    "enclose"
+  ]
+}

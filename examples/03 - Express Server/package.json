@@ -1,0 +1,27 @@
+{
+  "name": "express-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "morgan": "~1.7.0",
+    "pug": "^2.0.0-beta.12",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "pug-loader": "^2.3.0",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1",
+    "webpack-node-externals": "^1.5.4"
+  }
+}

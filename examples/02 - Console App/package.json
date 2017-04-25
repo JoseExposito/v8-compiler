@@ -1,0 +1,10 @@
+{
+  "name": "v8-compiler-cosole-app-example",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node ./main"
+  },
+  "devDependencies": {
+    "webpack": "^2.4.1"
+  }
+}
