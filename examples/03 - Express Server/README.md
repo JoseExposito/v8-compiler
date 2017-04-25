@@ -20,7 +20,7 @@ $ node webpack-build.js
 
 This will output the JavaScript code to compile to `build/bundle.js` and other non-JavaScript resources.
 
-Once all the source code is in the same file, compile and tun it with v8-compiler:
+Once all the source code is in the same file, compile and run it with v8-compiler:
 
 ```
 $ v8-compiler compile --in build/bundle.js --out build/express-example.jsc
